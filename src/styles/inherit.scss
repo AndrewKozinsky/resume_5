@@ -1,0 +1,36 @@
+@import 'variables';
+
+// ОБЩИЕ СТИЛИ ДЛЯ РАЗЛИЧНЫХ КОМПОНЕНТОВ.
+// ОНИ БУДУТ ВКЛЮЧАТЬСЯ В КОНКРЕТНЫЕ КЛАССЫ
+
+@mixin link() {
+	color: $blueColor-2;
+	font-weight: 500;
+	border-bottom: 1px solid rgba($blueColor-2, .2);
+	transition: color .2s, border-bottom-color .2s;
+
+	&:hover {
+		color: saturate($blueColor-2, 100%);
+		border-bottom-color: rgba($blueColor-2, .35);
+	}
+}
+
+@mixin link--current() {
+	/*cursor: default;
+	color: $orangeColor-2;
+	border-bottom: none;
+
+	&:hover {
+		color: saturate($orangeColor-2, 100%);
+		border-bottom-color: rgba($orangeColor-2, .35);
+	}*/
+}
+
+.outer-site-sign {
+	display: inline-block;
+	width: 0.7em;
+	height: 0.7em;
+	background-image: url("/images/outer-site-sign.svg");
+	background-size: 100% 100%;
+	margin-left: .3em;
+}
