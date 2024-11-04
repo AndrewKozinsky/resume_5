@@ -238,7 +238,7 @@ export const experienceConfig: ExperienceItems = [
 				'The principal decided to stop active development because existing functionality were enough to launch.',
 			],
 		},
-		technologies: ['TypeScript', 'React 18', 'Zustand', 'XState', 'React Query', 'Axios'],
+		technologies: ['TypeScript', 'React', 'Zustand', 'XState', 'React Query', 'Axios'],
 		achievements: {
 			rus: [
 				'Перевёл проект на другую систему управления состоянием чтобы уменьшить сложность и сократить время написания кода.',
@@ -262,8 +262,8 @@ export const experienceConfig: ExperienceItems = [
 			eng: 'Present time',
 		},
 		duration: {
-			rus: '9 месяцев',
-			eng: '9 months',
+			rus: '1 год',
+			eng: 'a year',
 		},
 		companyName: {
 			rus: 'It-Инкубатор',
