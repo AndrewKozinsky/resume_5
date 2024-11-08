@@ -36,17 +36,6 @@ export const projectsConfig: ProjectsConfig = [
 	},
 	{
 		name: {
-			rus: 'explainit.ru',
-			eng: 'explainit.ru',
-		},
-		description: {
-			rus: ['Учебник английского языка.'],
-			eng: ['English language textbook.'],
-		},
-		technologies: ['Next', 'Nest', 'Zustand'],
-	},
-	{
-		name: {
 			rus: 'Расширение Фигмы',
 			eng: 'A Figma extension',
 		},
@@ -78,5 +67,19 @@ export const projectsConfig: ProjectsConfig = [
 			eng: ['It works with blogs, posts, comments, users and deals with authorization.'],
 		},
 		technologies: ['Nest', 'Postgres'],
+	},
+	{
+		name: {
+			rus: 'API слона Инстаграмма',
+			eng: 'API слона Инстаграмма',
+		},
+		github: 'github.com/AndrewKozinsky/inctagram-backend',
+		description: {
+			rus: [
+				'Регистрация, вход пользователей, редактирование профиля, взаимодействие с микросервисом файлов и с микросервисом платежей',
+			],
+			eng: [''],
+		},
+		technologies: ['Nest', 'Postgres', 'Микросервисы'],
 	},
 ]

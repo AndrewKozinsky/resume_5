@@ -1,5 +1,4 @@
 import React from 'react'
-import Contacts from '../Contacts/Contacts'
 import Experience from '../Experience/Experience'
 import Footer from '../Footer/Footer'
 import Head from '../Head/Head'
@@ -11,11 +10,10 @@ function MainPage() {
 	return (
 		<div className="page-wrapper">
 			<div className="page-part">
-				<Head lang="rus" />
+				<Head />
 				<Experience lang="rus" />
 				<Tools lang="rus" />
 				<Projects lang="rus" />
-				<Contacts lang="rus" />
 				<Footer lang="rus" />
 			</div>
 		</div>

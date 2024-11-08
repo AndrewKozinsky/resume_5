@@ -5,7 +5,6 @@ import Paragraph from '../common/Paragraph/Paragraph'
 import ParagraphsContainer from '../common/ParagraphsContainer/ParagraphsContainer'
 import Sticker from '../common/Sticker/Sticker'
 import { experienceConfig, ExperienceConfigItem } from './fn/config'
-import { metaConfig } from './fn/metaConfig'
 import './Experience.scss'
 
 type ExperienceProps = {
@@ -17,7 +16,7 @@ function Experience(props: ExperienceProps) {
 
 	return (
 		<div>
-			<Header tag="h2">{metaConfig.sectionHeader[lang]}</Header>
+			<Header tag="h2">Опыт работы и коммерческие проекты</Header>
 			<div className="experience">
 				<div className="experience__items">
 					{experienceConfig.toReversed().map((configItem) => {
@@ -71,7 +70,7 @@ function ExperienceItem(props: ExperienceItemProps) {
 				{configItem.achievements && (
 					<div className="experience__achievements">
 						<h4 className="experience__achievements-header">
-							{metaConfig.achievementsSubheader[lang]}
+							Достижения
 						</h4>
 						<ul className="experience__achievements-list">
 							{configItem.achievements[lang].map((achievement) => {

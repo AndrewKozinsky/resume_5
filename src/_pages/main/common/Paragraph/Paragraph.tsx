@@ -2,7 +2,7 @@ import React from 'react'
 import './Paragraph.scss'
 
 type HeaderProps = {
-	children: string
+	children: string | React.ReactNode
 }
 
 function Paragraph(props: HeaderProps) {
