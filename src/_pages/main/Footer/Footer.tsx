@@ -1,18 +1,10 @@
 import React from 'react'
-import { LangType } from '../../../config/config'
-import { metaConfig } from './fn/metaConfig'
 import './Footer.scss'
 
-type FooterProps = {
-	lang: LangType
-}
-
-function Footer(props: FooterProps) {
-	const { lang } = props
-
+function Footer() {
 	return (
 		<div className="footer">
-			<p>{metaConfig.agreement[lang]}</p>
+			<p>Я даю согласие на обработку персональных данных по собственной воле и в своих интересах.</p>
 		</div>
 	)
 }

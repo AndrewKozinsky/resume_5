@@ -11,10 +11,11 @@ function MainPage() {
 		<div className="page-wrapper">
 			<div className="page-part">
 				<Head />
-				<Experience lang="rus" />
-				<Tools lang="rus" />
-				<Projects lang="rus" />
-				<Footer lang="rus" />
+				{/*<About />*/}
+				<Experience />
+				<Tools />
+				<Projects />
+				<Footer />
 			</div>
 		</div>
 	)

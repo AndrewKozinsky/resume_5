@@ -1,5 +1,4 @@
 import React from 'react'
-import { LangType } from '../../../config/config'
 import Header from '../common/Header/Header'
 import Paragraph from '../common/Paragraph/Paragraph'
 import ParagraphsContainer from '../common/ParagraphsContainer/ParagraphsContainer'
@@ -7,20 +6,14 @@ import Sticker from '../common/Sticker/Sticker'
 import { experienceConfig, ExperienceConfigItem } from './fn/config'
 import './Experience.scss'
 
-type ExperienceProps = {
-	lang: LangType
-}
-
-function Experience(props: ExperienceProps) {
-	const { lang } = props
-
+function Experience() {
 	return (
 		<div>
 			<Header tag="h2">Опыт работы и коммерческие проекты</Header>
 			<div className="experience">
 				<div className="experience__items">
 					{experienceConfig.toReversed().map((configItem) => {
-						return <ExperienceItem configItem={configItem} lang={lang} />
+						return <ExperienceItem configItem={configItem} />
 					})}
 				</div>
 			</div>
@@ -32,32 +25,31 @@ export default Experience
 
 type ExperienceItemProps = {
 	configItem: ExperienceConfigItem
-	lang: LangType
 }
 
 function ExperienceItem(props: ExperienceItemProps) {
-	const { configItem, lang } = props
+	const { configItem } = props
 
 	return (
 		<div className="experience__item">
 			<div className="experience__item-left">
 				<p className="experience__time">
-					<span>{configItem.startDate[lang]}</span>
-					<span>{configItem.endDate[lang]}</span>
+					<span>{configItem.startDate}</span>
+					<span>{configItem.endDate}</span>
 				</p>
-				<p className="experience__duration">{configItem.duration[lang]}</p>
+				<p className="experience__duration">{configItem.duration}</p>
 			</div>
 			<div className="experience__item-content">
-				<p className="experience__company-name">{configItem.companyName[lang]}</p>
+				<p className="experience__company-name">{configItem.companyName}</p>
 				<p className="experience__company-site">
 					<a href={'https://' + configItem.companySite} className="link">
 						{configItem.companySite}
 						<span className="outer-site-sign" />
 					</a>
 				</p>
-				<p className="experience__position">{configItem.position[lang]}</p>
+				<p className="experience__position">{configItem.position}</p>
 				<ParagraphsContainer>
-					{configItem.description[lang].map((item) => {
+					{configItem.description.map((item) => {
 						return <Paragraph>{item}</Paragraph>
 					})}
 				</ParagraphsContainer>
@@ -73,7 +65,7 @@ function ExperienceItem(props: ExperienceItemProps) {
 							Достижения
 						</h4>
 						<ul className="experience__achievements-list">
-							{configItem.achievements[lang].map((achievement) => {
+							{configItem.achievements.map((achievement) => {
 								return <li className="experience__achievement">{achievement}</li>
 							})}
 						</ul>
