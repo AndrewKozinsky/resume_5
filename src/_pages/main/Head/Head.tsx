@@ -35,7 +35,7 @@ export default Head
 function Details() {
 	const details = [
 		{type: 'info', name: 'Уровень', value: 'специалист'},
-		{type: 'info', name: 'З/п', value: '180 000 руб.'},
+		{type: 'info', name: 'З/п', value: '160 000 руб.'},
 		{type: 'info', name: 'Место', value: 'Россия, Оренбург (не готов к переезду)'},
 		{type: 'divider'},
 		{type: 'info', name: 'Почта', value: 'andkozinsky@gmail.com', link: 'mailto:andkozinsky@gmail.com', title: 'Почта'},

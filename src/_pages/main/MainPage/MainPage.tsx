@@ -1,4 +1,5 @@
 import React from 'react'
+import About from '../About/About'
 import Experience from '../Experience/Experience'
 import Footer from '../Footer/Footer'
 import Head from '../Head/Head'
@@ -11,7 +12,7 @@ function MainPage() {
 		<div className="page-wrapper">
 			<div className="page-part">
 				<Head />
-				{/*<About />*/}
+				<About />
 				<Experience />
 				<Tools />
 				<Projects />
