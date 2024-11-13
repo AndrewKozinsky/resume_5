@@ -32,6 +32,11 @@ export const projectsConfig: ProjectsConfig = [
 		technologies: ['TypeScript'],
 	},
 	{
+		name: 'Система управления знаниями Minerva Learn',
+		description:  ['Описание программы на [https://minervasoft.ru/lms]minervasoft.ru[]. Разрабатывал интерактивные компоненты опросников, табличное представление данных, формы проверки знаний, конструкторы статей и так далее.'],
+		technologies: ['TypeScript', 'React', 'Redux', 'SCSS'],
+	},
+	{
 		name: 'Обработчик форм',
 		github: 'github.com/AndrewKozinsky/modern-react-form',
 		technologies: ['React', 'TypeScript'],

@@ -3,7 +3,7 @@ import Header from '../common/Header/Header'
 import Paragraph from '../common/Paragraph/Paragraph'
 import ParagraphsContainer from '../common/ParagraphsContainer/ParagraphsContainer'
 import Sticker from '../common/Sticker/Sticker'
-import { experienceConfig, ExperienceConfigItem } from './fn/config'
+import { experienceConfig, WorkExperienceConfigItem } from './fn/config'
 import './Experience.scss'
 
 function Experience() {
@@ -13,7 +13,12 @@ function Experience() {
 			<div className="experience">
 				<div className="experience__items">
 					{experienceConfig.toReversed().map((configItem) => {
-						return <ExperienceItem configItem={configItem} />
+						if (configItem.type === 'workExperience') {
+							return <WorkExperienceItem configItem={configItem} />
+						}
+						else {
+							return <LearnExperienceItem />
+						}
 					})}
 				</div>
 			</div>
@@ -24,10 +29,10 @@ function Experience() {
 export default Experience
 
 type ExperienceItemProps = {
-	configItem: ExperienceConfigItem
+	configItem: WorkExperienceConfigItem
 }
 
-function ExperienceItem(props: ExperienceItemProps) {
+function WorkExperienceItem(props: ExperienceItemProps) {
 	const { configItem } = props
 
 	return (
@@ -74,4 +79,13 @@ function ExperienceItem(props: ExperienceItemProps) {
 			</div>
 		</div>
 	)
+}
+
+function LearnExperienceItem() {
+	return <div className='learn-experience'>
+		<Paragraph>В декабре 2023-го поступил на курс по серверной разработке.
+		Где в течение года изучил как писать сервера на NodeJS сначала на Express-е, затем на Nest-е.
+		Для данных использовал MongoDB и Postgres через сырые запросы и Mongoose и TypeORM.</Paragraph>
+		<Paragraph>Не искал работу чтобы полностью сосредоточиться на обучении. Сейчас оно завершено.</Paragraph>
+	</div>
 }

@@ -1,4 +1,5 @@
-export type ExperienceConfigItem = {
+export type WorkExperienceConfigItem = {
+	type: 'workExperience'
 	startDate: string
 	endDate: string
 	duration: string
@@ -9,11 +10,15 @@ export type ExperienceConfigItem = {
 	technologies: string[]
 	achievements?: string[]
 }
+export type LearnExperienceConfigItem = {
+	type: 'learnExperience'
+}
 
-export type ExperienceItems = ExperienceConfigItem[]
+export type ExperienceItems = (LearnExperienceConfigItem | WorkExperienceConfigItem)[]
 
 export const experienceConfig: ExperienceItems = [
 	{
+		type: 'workExperience',
 		startDate:  'Июнь 2012',
 		endDate:'Март 2014',
 		duration: '1 год 10 месяцев',
@@ -26,6 +31,7 @@ export const experienceConfig: ExperienceItems = [
 		technologies: ['Photoshop', 'Illustrator', 'HTML', 'CSS'],
 	},
 	{
+		type: 'workExperience',
 		startDate: 'Август 2014',
 		endDate: 'Июль 2015',
 		duration: '1 год',
@@ -38,6 +44,7 @@ export const experienceConfig: ExperienceItems = [
 		technologies: ['Photoshop', 'Illustrator'],
 	},
 	{
+		type: 'workExperience',
 		startDate: 'Апрель 2016',
 		endDate:  'Август 2020',
 		duration: '4 года 5 месяцев',
@@ -52,6 +59,7 @@ export const experienceConfig: ExperienceItems = [
 		achievements: ['Предлагал множество идей для увеличения конверсии сайта.'],
 	},
 	{
+		type: 'workExperience',
 		startDate:  'Октябрь 2020',
 		endDate: 'Июль 2021',
 		duration:  '10 месяцев',
@@ -67,6 +75,7 @@ export const experienceConfig: ExperienceItems = [
 		achievements: ['Продавил внедрение TypeScript-а для увеличения надёжности кода.'],
 	},
 	{
+		type: 'workExperience',
 		startDate: 'Ноябрь 2021',
 		endDate: 'Апрель 2022',
 		duration: '6 месяцев',
@@ -81,6 +90,7 @@ export const experienceConfig: ExperienceItems = [
 		achievements:  ['Предлагал гипотезы для улучшения продукта'],
 	},
 	{
+		type: 'workExperience',
 		startDate: 'Сентябрь 2022',
 		endDate: 'Декабрь 2023',
 		duration: '1 год 4 месяца',
@@ -101,6 +111,10 @@ export const experienceConfig: ExperienceItems = [
 			],
 	},
 	{
+		type: 'learnExperience',
+	},
+	/*{
+		type: 'workExperience',
 		startDate: 'Декабрь 2023',
 		endDate:  'Настоящее время',
 		duration: '1 год',
@@ -111,5 +125,5 @@ export const experienceConfig: ExperienceItems = [
 				'Мне интересно стать разработчиком полного цикла, поэтому с декабря 2023 прохожу обучение. Поэтому поисками работы не занимался. Мне осталось ещё 2 месяца. Это не помешает работе.',
 			],
 		technologies: ['TypeScript', 'Node', 'Express', 'Nest', 'Mongo', 'Postgres', 'TypeORM'],
-	},
+	},*/
 ]

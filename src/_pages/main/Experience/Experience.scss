@@ -99,3 +99,12 @@
 	line-height: 2rem;
 	list-style: disc;
 }
+
+.learn-experience {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	background-color: $grayColor-1;
+	padding: 1rem;
+	border-radius: .5rem;
+}
