@@ -83,8 +83,8 @@ function WorkExperienceItem(props: ExperienceItemProps) {
 
 function LearnExperienceItem() {
 	return <div className='learn-experience'>
-		<Paragraph>В декабре 2023-го поступил на курс по серверной разработке.
-		Где в течение года изучил как писать сервера на NodeJS сначала на Express-е, затем на Nest-е.
+		<Paragraph>2024 год потратил на изучение серверной разработки на учебном курсе.
+		Практиковался писать сервера на NodeJS: сначала на Express-е, затем на Nest-е.
 		Для данных использовал MongoDB и Postgres через сырые запросы и Mongoose и TypeORM.</Paragraph>
 		<Paragraph>Не искал работу чтобы полностью сосредоточиться на обучении. Сейчас оно завершено.</Paragraph>
 	</div>

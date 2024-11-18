@@ -11,11 +11,11 @@ export const projectsConfig: ProjectsConfig = [
 	{
 		name: 'Образовательная платформа Credu',
 		description: [
-			'Разработка клиентской части платформы для создания школ преподающих иностранные языки. Создание курсов, уроков, упражнений, заведение учеников, вывод, фильтрация, заказы, страницы со статистикой успеваемости, сотрудники, профили пользователей, оплаты, конструктор одностраничников, регистрация, вход.',
+			'Разработка платформы для школ иностранных языков. Создание курсов, уроков, упражнений, ведение учеников, вывод, фильтрация, заказы, статистика успеваемости, сотрудники, профили пользователей, оплаты, конструктор одностраничников, регистрация, вход.',
 			'В проекте написал порядка 90% всего клиентского кода.',
-			'Видео с описанием функций: [https://nextjs.org]youtube.com/@creduplatform[]',
+			'Видео с описанием функций: [https://youtube.com/@creduplatform]youtube.com/@creduplatform[]',
 		],
-		technologies: ['TypeScript', 'React', 'Redux', 'Zustand', 'React Query', 'SCSS', 'Axios'],
+		technologies: ['HTML', 'TypeScript', 'React', 'Redux', 'Zustand', 'React Query', 'SCSS', 'Axios'],
 	},
 	{
 		name: 'Сайт английского языка',
@@ -23,7 +23,7 @@ export const projectsConfig: ProjectsConfig = [
 		description: [
 			'Реализован механизм преобразования макетов Фигмы в компоненты Реакта для формирования интерактивных статей. Сделан тренажёр по переводу предложений на английский.',
 		],
-		technologies: ['React', 'NestJS', 'SCSS'],
+		technologies: ['HTML', 'React', 'NestJS', 'SCSS'],
 	},
 	{
 		name: 'Расширение Фигмы переводящее макеты в данные для построения компонентов Реакта',
@@ -34,7 +34,7 @@ export const projectsConfig: ProjectsConfig = [
 	{
 		name: 'Система управления знаниями Minerva Learn',
 		description:  ['Описание программы на [https://minervasoft.ru/lms]minervasoft.ru[]. Разрабатывал интерактивные компоненты опросников, табличное представление данных, формы проверки знаний, конструкторы статей и так далее.'],
-		technologies: ['TypeScript', 'React', 'Redux', 'SCSS'],
+		technologies: ['HTML', 'TypeScript', 'React', 'Redux', 'SCSS'],
 	},
 	{
 		name: 'Обработчик форм',
@@ -53,7 +53,7 @@ export const projectsConfig: ProjectsConfig = [
 		name: 'API клона Инстаграмма',
 		github: 'github.com/AndrewKozinsky/inctagram-backend',
 		description: [
-				'Регистрация, вход пользователей, редактирование профиля, взаимодействие с микросервисом файлов и с микросервисом платежей',
+				'Регистрация, вход пользователей, редактирование профиля, взаимодействие с микросервисом файлов.',
 			],
 		technologies: ['Nest', 'Postgres', 'Микросервисы'],
 	},
@@ -62,7 +62,7 @@ export const projectsConfig: ProjectsConfig = [
 		github: 'github.com/AndrewKozinsky/editor',
 		description:  [
 			'Я придумал принцип его работы, нарисовал и написал код.',
-			'Объяснение принципа работы: youtube.com/watch?v=2SB0DEwHLqg',
+			'Объяснение принципа работы на [https://youtube.com/watch?v=2SB0DEwHLqg]youtube.com[]',
 			'Не стал продолжать потому что это нет ни времени, ни денег.',
 		],
 		technologies: ['React', 'Node', 'Next', 'Nest', 'Docker'],
@@ -74,6 +74,6 @@ export const projectsConfig: ProjectsConfig = [
 			'Остановил разработку после того, как понял через что рисуются сложные формы в WebGL. Таких знаний математики у меня близко нет. И в тот момент не знал про Вебпак, поэтому пришёл к взаимным зависимостям в коде ). И одному с такой работой не справиться.',
 			'Разрабатывал в 2017-18 году до того, как стал понимать для чего нужен GitHub, поэтому код не сохранился.',
 		],
-		technologies: ['JavaScript', 'CSS'],
+		technologies: ['HTML', 'JavaScript', 'CSS'],
 	},
 ]
