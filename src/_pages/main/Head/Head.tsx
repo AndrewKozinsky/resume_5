@@ -15,7 +15,7 @@ function Head() {
 				/>
 			</div>
 			<div className="head__right-site">
-				<p className="head__position">Fullstack (React и Nest)</p>
+				<p className="head__position">Разработчик React-а</p>
 				<h1 className="head__name">Андрей Козинский</h1>
 				<div className="head__details">
 					<Details />
