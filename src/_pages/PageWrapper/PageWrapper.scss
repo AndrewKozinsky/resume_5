@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+
+.page-wrapper {
+    position: relative;
+    padding: 0 3%;
+    margin: 2rem auto 5rem 0;
+}
+
+.page-wrapper__menu {
+    top: .5rem;
+    position: sticky;
+    display: inline-flex;
+    gap: 1rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: $radius-1;
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+    z-index: 1;
+}
