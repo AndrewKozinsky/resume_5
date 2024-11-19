@@ -2,20 +2,21 @@ import React from 'react'
 import Header from '../common/Header/Header'
 import Paragraph from '../common/Paragraph/Paragraph'
 import ParagraphsContainer from '../common/ParagraphsContainer/ParagraphsContainer'
+import SectionWrapper from '../common/SectionWrapper/SectionWrapper'
 import Sticker from '../common/Sticker/Sticker'
 import { projectsConfig, ProjectConfig } from './fn/config'
 import './Projects.scss'
 
 function Projects() {
 	return (
-		<div>
+		<SectionWrapper>
 			<Header tag="h2">Проекты</Header>
 			<div className="projects">
 				{projectsConfig.map((configItem) => {
 					return <ExperienceItem configItem={configItem} />
 				})}
 			</div>
-		</div>
+		</SectionWrapper>
 	)
 }
 

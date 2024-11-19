@@ -13,7 +13,6 @@ function Header(props: HeaderProps) {
 	const Tag = tag
 
 	return <Tag className={cn('header', 'header--' + tag)}>{children}</Tag>
-	// return <Tag>555</Tag>
 }
 
 export default Header

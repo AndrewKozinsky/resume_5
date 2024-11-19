@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
 @import '../../../styles/variables.scss';
 @import '../../../styles/mixins.scss';
 @import '../../../styles/inherit.scss';
@@ -8,6 +8,7 @@
 	// Поэтому 10 пикселей будет 62.5%.
 	// Размер в процентах указывается для слабовидящих у которых в браузере стоит увеличенный шрифт.
 	font-size: 62.5%;
+
 }
 
 *:not(svg, g, path) {
@@ -29,17 +30,20 @@ html, body {
 }
 
 body {
-	font-family: "Montserrat", sans-serif;
-	font-size: 1.6rem;
-	line-height: 2.2rem;
-	font-weight: 400;
+	font-family: "Commissioner", sans-serif;
+	font-optical-sizing: auto;
+	font-size: 1.7rem;
+	line-height: 2.4rem;
+	font-weight: 390;
 	color: $textColor;
-	//background: $grayColor-1;
-	//min-height: 100dvh;
-	//margin: 0 auto;
+	font-variation-settings:
+			"slnt" 0,
+			"FLAR" 0,
+			"VOLM" 0;
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: $grayColor-1;
 }
 
 a {

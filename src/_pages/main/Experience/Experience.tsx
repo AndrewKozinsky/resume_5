@@ -2,13 +2,14 @@ import React from 'react'
 import Header from '../common/Header/Header'
 import Paragraph from '../common/Paragraph/Paragraph'
 import ParagraphsContainer from '../common/ParagraphsContainer/ParagraphsContainer'
+import SectionWrapper from '../common/SectionWrapper/SectionWrapper'
 import Sticker from '../common/Sticker/Sticker'
 import { experienceConfig, WorkExperienceConfigItem } from './fn/config'
 import './Experience.scss'
 
 function Experience() {
 	return (
-		<div>
+		<SectionWrapper>
 			<Header tag="h2">Опыт работы</Header>
 			<div className="experience">
 				<div className="experience__items">
@@ -22,7 +23,7 @@ function Experience() {
 					})}
 				</div>
 			</div>
-		</div>
+		</SectionWrapper>
 	)
 }
 
