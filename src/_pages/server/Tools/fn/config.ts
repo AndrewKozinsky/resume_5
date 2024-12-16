@@ -29,7 +29,7 @@ export const toolsConfig: ToolsConfig = [
 			],
 	},
 	{
-		toolName: 'Другое',
+		toolName: 'Git, NPM, Docker',
 		description: [
 				'Git на уровне клонировать, сделать коммит, обновить, слить. Более глубокие знания не потребовались. Работал по git-flow.',
 				'Терминал знаю на уровне поставить пакет из NPM, запуск основных команд NPM.',

@@ -2,19 +2,20 @@ import React from 'react'
 import Header from '../common/Header/Header'
 import Paragraph from '../common/Paragraph/Paragraph'
 import ParagraphsContainer from '../common/ParagraphsContainer/ParagraphsContainer'
+import SectionWrapper from '../common/SectionWrapper/SectionWrapper'
 import { ToolConfig, toolsConfig } from './fn/config'
 import './Tools.scss'
 
 function Tools() {
 	return (
-		<div>
-			<Header tag="h2">Инструменты</Header>
+		<SectionWrapper>
+			<Header tag="h2">Навыки</Header>
 			<div className="tools">
 				{toolsConfig.map((configItem) => {
 					return <Tool configItem={configItem} />
 				})}
 			</div>
-		</div>
+		</SectionWrapper>
 	)
 }
 

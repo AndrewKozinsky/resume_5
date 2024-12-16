@@ -12,8 +12,8 @@ function MainPage() {
 			<div className="page-part">
 				<Head />
 				<About />
-				<Experience />
 				<Tools />
+				<Experience />
 				<Projects />
 				<Footer />
 			</div>

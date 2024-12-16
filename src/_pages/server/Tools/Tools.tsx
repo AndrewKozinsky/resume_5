@@ -8,7 +8,7 @@ import './Tools.scss'
 function Tools() {
 	return (
 		<div>
-			<Header tag="h2">Инструменты</Header>
+			<Header tag="h2">Навыки</Header>
 			<div className="tools">
 				{toolsConfig.map((configItem) => {
 					return <Tool configItem={configItem} />

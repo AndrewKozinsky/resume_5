@@ -9,7 +9,7 @@ import './Experience.scss'
 
 function Experience() {
 	return (
-		<SectionWrapper>
+		<div>
 			<Header tag="h2">Опыт работы</Header>
 			<div className="experience">
 				<div className="experience__items">
@@ -23,7 +23,7 @@ function Experience() {
 					})}
 				</div>
 			</div>
-		</SectionWrapper>
+		</div>
 	)
 }
 

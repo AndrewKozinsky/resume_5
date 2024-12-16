@@ -35,8 +35,11 @@ export default Head
 function Details() {
 	const details = [
 		{type: 'info', name: 'Уровень', value: 'специалист'},
-		{type: 'info', name: 'З/п', value: '160 000 руб.'},
-		{type: 'info', name: 'Место', value: 'Россия, Оренбург (не готов к переезду)'},
+		{type: 'divider'},
+		{type: 'info', value: '160 000 руб. + оплата налогов / 1000 рублей в час.'},
+		{type: 'info', value: 'Живу в России, Оренбург (+2 часа). Работаю по времени Москвы. Без переезда.'},
+		{type: 'info', value: 'Самозанятость, ИП возможно.'},
+		{type: 'info', value: 'Сейчас не работаю. На новое место могу выйти в ближайшее время.'},
 		{type: 'divider'},
 		{type: 'info', name: 'Почта', value: 'andkozinsky@gmail.com', link: 'mailto:andkozinsky@gmail.com', title: 'Почта'},
 		{type: 'info', name: 'Телефон', value: '8 (919) 842-35-99', link: 'callto:89198423599', title: 'Телефон'},
@@ -55,7 +58,7 @@ function Details() {
 					: value
 
 				return (
-					<Paragraph><strong>{name}: </strong>{valueMarkup}</Paragraph>
+					<Paragraph>{name && <strong>{name}: </strong>}{valueMarkup}</Paragraph>
 				)
 			}
 

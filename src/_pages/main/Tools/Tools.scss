@@ -23,7 +23,7 @@
 	padding-right: 1rem;
 
 	@include container-width($tablet-width) {
-		width: $leftCell;
+		width: $leftCell * 2;
 	}
 }
 
