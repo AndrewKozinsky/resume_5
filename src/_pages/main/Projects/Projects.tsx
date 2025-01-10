@@ -39,6 +39,13 @@ function ExperienceItem(props: ExperienceItemProps) {
 					</a>
 				</p>
 			)}
+			{configItem.site && (
+				<p className="project__site">
+					<a href={'https://' + configItem.site} className="link">
+						{configItem.site}
+					</a>
+				</p>
+			)}
 
 			{configItem.description && (
 				<ParagraphsContainer>
