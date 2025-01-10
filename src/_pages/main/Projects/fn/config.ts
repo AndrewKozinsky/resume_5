@@ -15,7 +15,7 @@ export const projectsConfig: ProjectsConfig = [
 			'Небольшой графический редактор. Умеет изменять масштаб, перемещать холст, рисовать предопределённых фигуры, изменять заливку и обводку, перемещать, изменять размеры и местоположение.',
 		],
 		github: 'github.com/AndrewKozinsky/board',
-		site: 'board-for-vercel-git-master-andrewkozinskys-projects.vercel.app',
+		site: 'explainit.ru',
 		technologies: ['HTML', 'SCSS', 'TypeScript', 'Vite', 'React', 'Zustand', 'Pixi.js'],
 	},
 	{
