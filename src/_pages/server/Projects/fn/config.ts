@@ -24,4 +24,12 @@ export const projectsConfig: ProjectsConfig = [
 			],
 		technologies: ['Nest', 'Postgres', 'Микросервисы'],
 	},
+	{
+		name: 'API сервера взаимодействия с посыльными ящиками',
+		github: 'github.com/AndrewKozinsky/parcelBox',
+		description: [
+				'Регистрация администратора, отправителя, вход пользователей, создание шаблонов ящиков и ячеек, создание и удаление физических ящиков. Концевое тестирование и сервера и клиента.',
+			],
+		technologies: ['Nest', 'Postgres', 'GraphQL', 'React', 'Zustand', 'Next', 'Docker'],
+	},
 ]
