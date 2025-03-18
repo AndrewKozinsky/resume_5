@@ -7,12 +7,12 @@ export type ToolsConfig = ToolConfig[]
 
 export const toolsConfig: ToolsConfig = [
 	{
-		toolName: 'HTML и CSS',
-		description: ['На протяжении 5 лет проектировал UI и внешний вид классических сайтов. Figma/Sketch/Photoshop. Вёрстал классические сайты на HTML и CSS.'],
+		toolName: 'HTML, CSS, SCSS',
+		description: ['5 лет рисовал и вёрстал классические сайты на HTML и CSS. Работал с Фигмой, Скетчем, Фотошопом.'],
 	},
 	{
 		toolName: 'JavaScript и TypeScript',
-		description: ['JavaScript с 2015 года. TypeScript последние 5 лет.'],
+		description: ['С JS работаю с 2015 года. С TS с 2020-го.'],
 	},
 	{
 		toolName: 'React, Next, And Design, SCSS, Redux, Redux Toolkit, Zustand, React Router, Vite, Eslint, Prettier',
@@ -24,16 +24,40 @@ export const toolsConfig: ToolsConfig = [
 				'Для сложной логики подключал XState и проектировал переходы в их редакторе, но не понравился.',
 				'React Router для навигации по страницам.',
 				'React Query для управления и кешированием запросов. Сами запросы через Axios.',
-				'На Webpack-е настраивал проект для работы с Реактом  (перевод TS в JavaScript, SCSS в CSS, webpack-dev-server, сборка для разработки и публикации, генерация HTML,). Vite для быстрой сборки экспериментальных проектов.',
+				'На Webpack-е настраивал проект для работы с Реактом  (перевод TS в JavaScript, SCSS в CSS, webpack-dev-server, сборка для разработки и публикации, генерация HTML,). В последнее время Vite.',
 				'На последнем месте работы брал компоненты из And Design.',
 				'Eslint, Prettier для форматирования кода.',
 			]
 	},
 	{
-		toolName: 'Тесты',
+		toolName: 'Express.js, Nest.js',
 		description: [
-				'Писал e2e и модульные тесты. В основном на API. Есть опыт тестирования клиентских компонентов.',
+			'Писал обработчики маршрутов REST и GraphQL.',
+			'Проектировал как сервер должен отвечать на успешные и ошибочные запросы.',
+			'Писал проверки входящих данных чтобы они не конфликтовали с полями в таблицах.',
+			'Работаю по CQRS.',
+			'Добавлял  OAuth2 (GitHub и Google), капчу, сохранение файлов в облаке'
+		],
+	},
+	{
+		toolName: 'Postgres, TypeORM, PrismaORM',
+		description: ['Писал сырые запросы для PG. Использовал транзакции и уровни изоляции. Проектировал таблицы. Взаимодействовал с БД через TypeORM и PrismaORM.'],
+	},
+	{
+		toolName: 'MongoDB и Mongoose',
+		description: ['Монгу использовал для знакомства с нереляционными БД для написания учебного проекта и в качестве БД для микросервиса файлов.'],
+	},
+	{
+		toolName: 'Тесты, Supertest, Cypress',
+		description: [
+				'В основном писал e2e. Для Реакта через Cypress, для сервера Jest и Supertest. Для сервера придерживаюсь концепции «Разработка через тестирование».',
 			],
+	},
+	{
+		toolName: 'GraphQL',
+		description: [
+			'Реализовывал GraphQL на сервере (Nest) и клиенте (React). Писал генератор на клиенте для автоматического создания типов и хуков для манипулирования данными.',
+		],
 	},
 	{
 		toolName: 'Git, NPM, Docker',
@@ -41,13 +65,8 @@ export const toolsConfig: ToolsConfig = [
 				'Git на уровне клонировать, сделать коммит, обновить, слить. Более глубокие знания не потребовались. Работал по git-flow.',
 				'Терминал знаю на уровне поставить пакет из NPM, запуск основных команд NPM и Докера.',
 				'Запускаю проекты в Докере. Пишу Dockerfile и docker-compose.yml. Разворачивал сайты на сервере.',
+				'Читаю документацию на английском.',
 			],
-	},
-	{
-		toolName: 'Node.js',
-		description: [
-			'Для подробностей перейдите на соответствующую страницу через меню сверху.',
-		],
 	},
 	{
 		toolName: 'Прочее',

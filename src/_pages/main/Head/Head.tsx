@@ -15,7 +15,7 @@ function Head() {
 				/>
 			</div>
 			<div className="head__right-site">
-				<p className="head__position">Разработчик React-а</p>
+				<p className="head__position">Разработчик полного цикла (React и Nest)</p>
 				<h1 className="head__name">Андрей Козинский</h1>
 				<div className="head__details">
 					<Details />
@@ -36,7 +36,7 @@ function Details() {
 	const details = [
 		{type: 'info', name: 'Уровень', value: 'специалист'},
 		{type: 'divider'},
-		{type: 'info', value: '160 000 руб. + оплата налогов / 1000 рублей в час.'},
+		{type: 'info', value: '160 000 руб. / 1000 рублей в час.'},
 		{type: 'info', value: 'Живу в России, Оренбург (+2 часа). Работаю по времени Москвы. Без переезда.'},
 		{type: 'info', value: 'Самозанятость, ИП возможно.'},
 		{type: 'info', value: 'Сейчас не работаю. На новое место могу выйти в ближайшее время.'},

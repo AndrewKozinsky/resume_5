@@ -14,10 +14,10 @@ function PageWrapper(props: PageWrapperProps) {
 
 	return (
 		<div className="page-wrapper">
-			<nav className='page-wrapper__menu'>
+			{/*<nav className='page-wrapper__menu'>
 				<MenuLink title='Разработчик React' href="/" />
 				<MenuLink title='Разработчик Node.js' href="/server" />
-			</nav>
+			</nav>*/}
 			{ children }
 		</div>
 	)
