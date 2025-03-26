@@ -21,4 +21,26 @@
 	margin-top: 1.2rem;
 }
 
+.project__type-sticker {
+	display: inline-flex;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	color: white;
+	padding: 0 .6rem;
+	border-radius: .4rem;
+	margin-bottom: 0.4rem;
+
+	&--client {
+		background-color: $warmColor-3;
+	}
+
+	&--server {
+		background-color: $blueColor-2;
+	}
+
+	&--both {
+		background: linear-gradient(90deg, $warmColor-3 0%, $blueColor-2);
+	}
+}
+
 

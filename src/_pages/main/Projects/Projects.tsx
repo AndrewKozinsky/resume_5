@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {ReactNode} from 'react'
 import Header from '../common/Header/Header'
 import Paragraph from '../common/Paragraph/Paragraph'
 import ParagraphsContainer from '../common/ParagraphsContainer/ParagraphsContainer'
 import SectionWrapper from '../common/SectionWrapper/SectionWrapper'
 import Sticker from '../common/Sticker/Sticker'
-import { projectsConfig, ProjectConfig } from './fn/config'
+import {ProjectConfig, projectsConfig, ProjectType} from './fn/config'
 import './Projects.scss'
 
 function Projects() {
@@ -31,6 +31,7 @@ function ExperienceItem(props: ExperienceItemProps) {
 
 	return (
 		<div className="project">
+			<ProjectTypeSticker projectType={configItem.type} />
 			<Header tag="h3">{configItem.name}</Header>
 			{configItem.github && (
 				<p className="project__site">
@@ -61,4 +62,20 @@ function ExperienceItem(props: ExperienceItemProps) {
 			</div>
 		</div>
 	)
+}
+
+type ProjectTypeStickerProps = {
+	projectType: ProjectType
+}
+
+function ProjectTypeSticker(props: ProjectTypeStickerProps) {
+	const { projectType } = props
+
+	const componentMapper: Record<ProjectType, ReactNode> = {
+		[ProjectType.client]: <p className='project__type-sticker project__type-sticker--client'>Разработка клиента</p>,
+		[ProjectType.server]: <p className='project__type-sticker project__type-sticker--server'>Разработка сервера</p>,
+		[ProjectType.both]: <p className='project__type-sticker project__type-sticker--both'>Разработка клиента и сервера</p>
+	}
+
+	return componentMapper[projectType]
 }
