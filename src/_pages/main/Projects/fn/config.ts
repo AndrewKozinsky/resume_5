@@ -39,11 +39,12 @@ export const projectsConfig: ProjectsConfig = [
 	{
 		type: ProjectType.client,
 		name: 'Сайт английского языка',
-		github: 'github.com/AndrewKozinsky/explain-full',
+		// github: 'github.com/AndrewKozinsky/explain-full',
+		site: 'explainit.ru',
 		description: [
-			'Реализован механизм преобразования макетов Фигмы в компоненты Реакта для формирования интерактивных статей. Сделан тренажёр по переводу предложений на английский.',
+			'Курс английского языка с тренажёрами по переводу предложений на английский.',
 		],
-		technologies: ['HTML', 'React', 'NestJS', 'SCSS'],
+		technologies: ['HTML', 'SCSS', 'Next.js','NestJS'],
 	},
 	{
 		type: ProjectType.client,
