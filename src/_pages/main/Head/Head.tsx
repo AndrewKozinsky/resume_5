@@ -36,9 +36,9 @@ function Details() {
 	const details = [
 		{type: 'info', name: 'Уровень', value: 'специалист'},
 		{type: 'divider'},
-		{type: 'info', value: '140 000 руб. / 1000 рублей в час.'},
+		{type: 'info', value: '200 000 руб. / 2000 рублей в час.'},
 		{type: 'info', value: 'Россия, Оренбург (+2 часа от Москвы). Работаю по времени Москвы. Без переезда.'},
-		{type: 'info', value: 'Самозанятость, ИП возможно.'},
+		{type: 'info', value: 'Самозанятость, ИП и оф. оформление возможно.'},
 		{type: 'info', value: 'Сейчас не работаю. На новое место могу выйти в ближайшее время.'},
 		{type: 'divider'},
 		{type: 'info', name: 'Почта', value: 'andkozinsky@gmail.com', link: 'mailto:andkozinsky@gmail.com', title: 'Почта'},
