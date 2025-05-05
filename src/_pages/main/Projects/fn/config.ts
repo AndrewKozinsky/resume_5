@@ -18,16 +18,6 @@ export type ProjectsConfig = ProjectConfig[]
 export const projectsConfig: ProjectsConfig = [
 	{
 		type: ProjectType.client,
-		name: 'Графический редактор',
-		description: [
-			'Небольшой графический редактор. Умеет изменять масштаб, перемещать холст, рисовать предопределённых фигуры, изменять заливку и обводку, перемещать, изменять размеры и местоположение.',
-		],
-		github: 'github.com/AndrewKozinsky/board',
-		site: 'board-for-vercel.vercel.app/',
-		technologies: ['HTML', 'SCSS', 'TypeScript', 'Vite', 'React', 'Zustand', 'Pixi.js'],
-	},
-	{
-		type: ProjectType.client,
 		name: 'Образовательная платформа Credu',
 		description: [
 			'Разработка платформы для школ иностранных языков. Создание курсов, уроков, упражнений, ведение учеников, вывод, фильтрация, заказы, статистика успеваемости, сотрудники, профили пользователей, оплаты, конструктор одностраничников, регистрация, вход.',
@@ -35,6 +25,22 @@ export const projectsConfig: ProjectsConfig = [
 			'Видео с описанием функций: [https://youtube.com/@creduplatform]youtube.com/@creduplatform[]',
 		],
 		technologies: ['HTML', 'TypeScript', 'React', 'Redux', 'Zustand', 'React Query', 'SCSS', 'Axios'],
+	},
+	{
+		type: ProjectType.client,
+		name: 'Система управления знаниями Minerva Learn',
+		description:  ['Описание программы на [https://minervasoft.ru/lms]minervasoft.ru[]. Разрабатывал интерактивные компоненты опросников, табличное представление данных, формы проверки знаний, конструкторы статей и так далее.'],
+		technologies: ['HTML', 'TypeScript', 'React', 'Redux', 'SCSS'],
+	},
+	{
+		type: ProjectType.client,
+		name: 'Графический редактор',
+		description: [
+			'Небольшой графический редактор. Умеет изменять масштаб, перемещать холст, рисовать предопределённых фигуры, изменять заливку и обводку, перемещать, изменять размеры и местоположение.',
+		],
+		github: 'github.com/AndrewKozinsky/board',
+		site: 'board-for-vercel.vercel.app/',
+		technologies: ['HTML', 'SCSS', 'TypeScript', 'Vite', 'React', 'Zustand', 'Pixi.js'],
 	},
 	{
 		type: ProjectType.client,
@@ -47,25 +53,6 @@ export const projectsConfig: ProjectsConfig = [
 		technologies: ['HTML', 'SCSS', 'Next.js','NestJS'],
 	},
 	{
-		type: ProjectType.client,
-		name: 'Расширение Фигмы переводящее макеты в данные для построения компонентов Реакта',
-		github: 'github.com/AndrewKozinsky/figma-to-code',
-		description:  ['Перевод макетов в формат данных для формирования статей.'],
-		technologies: ['TypeScript'],
-	},
-	{
-		type: ProjectType.client,
-		name: 'Система управления знаниями Minerva Learn',
-		description:  ['Описание программы на [https://minervasoft.ru/lms]minervasoft.ru[]. Разрабатывал интерактивные компоненты опросников, табличное представление данных, формы проверки знаний, конструкторы статей и так далее.'],
-		technologies: ['HTML', 'TypeScript', 'React', 'Redux', 'SCSS'],
-	},
-	{
-		type: ProjectType.client,
-		name: 'Обработчик форм',
-		github: 'github.com/AndrewKozinsky/modern-react-form',
-		technologies: ['React', 'TypeScript'],
-	},
-	{
 		type: ProjectType.both,
 		name:  'Редактор Эдиториум',
 		github: 'github.com/AndrewKozinsky/editor',
@@ -75,6 +62,19 @@ export const projectsConfig: ProjectsConfig = [
 			'Не стал продолжать потому что это нет ни времени, ни денег.',
 		],
 		technologies: ['React', 'Node', 'Next', 'Nest', 'Docker'],
+	},
+	{
+		type: ProjectType.client,
+		name: 'Расширение Фигмы переводящее макеты в данные для построения компонентов Реакта',
+		github: 'github.com/AndrewKozinsky/figma-to-code',
+		description:  ['Перевод макетов в формат данных для формирования статей.'],
+		technologies: ['TypeScript'],
+	},
+	{
+		type: ProjectType.client,
+		name: 'Обработчик форм',
+		github: 'github.com/AndrewKozinsky/modern-react-form',
+		technologies: ['React', 'TypeScript'],
 	},
 	{
 		type: ProjectType.client,
@@ -113,15 +113,6 @@ export const projectsConfig: ProjectsConfig = [
 		technologies: ['Nest', 'Postgres'],
 	},
 	{
-		type: ProjectType.server,
-		name: 'API клона Инстаграмма',
-		github: 'github.com/AndrewKozinsky/inctagram-backend',
-		description: [
-			'Регистрация, вход пользователей, редактирование профиля, взаимодействие с микросервисом файлов.',
-		],
-		technologies: ['Nest', 'Postgres', 'Микросервисы'],
-	},
-	{
 		type: ProjectType.both,
 		name: 'API сервера взаимодействия с посыльными ящиками',
 		github: 'github.com/AndrewKozinsky/parcelBox',
@@ -129,5 +120,14 @@ export const projectsConfig: ProjectsConfig = [
 			'Регистрация администратора, отправителя, вход пользователей, создание шаблонов ящиков и ячеек, создание и удаление физических ящиков. Концевое тестирование и сервера и клиента.',
 		],
 		technologies: ['Nest', 'Postgres', 'GraphQL', 'React', 'Zustand', 'Next', 'Docker'],
+	},
+	{
+		type: ProjectType.server,
+		name: 'API клона Инстаграмма',
+		github: 'github.com/AndrewKozinsky/inctagram-backend',
+		description: [
+			'Регистрация, вход пользователей, редактирование профиля, взаимодействие с микросервисом файлов.',
+		],
+		technologies: ['Nest', 'Postgres', 'Микросервисы'],
 	},
 ]
